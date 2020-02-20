@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const path = require('path');
 const env = require('yargs').argv.env; // use --env with webpack 2
 const pkg = require('./package.json');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let libraryName = pkg.name;
 
@@ -29,6 +30,9 @@ const config = {
     umdNamedDefine: true,
     globalObject: "typeof self !== 'undefined' ? self : this"
   },
+  plugins: [
+    new HtmlWebpackPlugin()
+  ],
   module: {
     rules: [
       {

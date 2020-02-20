@@ -1,3 +1,5 @@
-import Cat from './cat.js';
-import Dog from './dog.js';
-export { Dog, Cat };
+import DomChecker from './domchecker.js';
+
+const domCheck = new DomChecker();
+
+domCheck.init();
