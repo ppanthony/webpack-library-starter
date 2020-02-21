@@ -1,5 +1,5 @@
 import DomChecker from './domchecker.js';
-import DomInspector from 'dom-inspector';
+import DomInspector from './dominspect/index';
 
 const domCheck = new DomChecker();
 
@@ -7,7 +7,7 @@ domCheck.init(function (widget) {
 
   const inspector = new DomInspector({
     root: 'body',
-    exclude: [],
+    exclude: [document.querySelector('.capable-widget')],
     theme: 'you-custom-theme-class'
   });
 
