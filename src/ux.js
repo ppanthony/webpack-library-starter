@@ -11,17 +11,18 @@ export default class UX {
 
   buildUX() {
 
-    var widget = document.createElement('div');
+    var widget = document.createElement('a');
 
     widget.classList.add('capable-widget');
     document.body.appendChild(widget);
+    return widget;
   }
 
-  onReady() {
+  onReady(callback) {
     let that = this;
 
     ready(function () {
-      that.buildUX();
+      callback(that.buildUX());
     });
 
   }

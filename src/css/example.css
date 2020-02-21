@@ -1,6 +1,28 @@
 .capable-widget {
     border:1px solid red;
-    width:100px;
-    height:100px;
+    width:60px;
+    height:60px;
+    position: absolute;
+    bottom:10px;
+    right:10px;
     display:block;
+}
+.you-custom-theme-class .margin {
+    background-color: blue;
+    opacity:0.1;
+}
+
+.you-custom-theme-class .border {
+    background-color: red;
+    opacity:0.1;
+}
+
+.you-custom-theme-class .padding {
+    background-color: green;
+    opacity:0.1;
+}
+
+.you-custom-theme-class .content {
+    background-color: gray;
+    opacity:0.1;
 }

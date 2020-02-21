@@ -61,6 +61,7 @@
     "instrument": false
   },
   "dependencies": {
-    "document-ready": "^2.0.2"
+    "document-ready": "^2.0.2",
+    "dom-inspector": "^1.2.2"
   }
 }

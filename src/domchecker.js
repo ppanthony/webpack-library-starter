@@ -5,12 +5,25 @@ export default class DomChecker {
 
   }
 
-  init() {
+  init(cb) {
 
     let ux = new UX();
 
-    ux.onReady();
+    ux.onReady(function (widget) {
 
+      // pass widget on up the chain.
+      cb(widget);
+    });
+
+  }
+
+  setEnabled(enabled) {
+    alert(enabled);
+    this.enabled = enabled;
+  }
+
+  getEnabled() {
+    return this.enabled;
   }
 
 }
